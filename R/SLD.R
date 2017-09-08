@@ -2,7 +2,7 @@
 #'
 #' Smart Location Database by US EPA.
 #'
-#' @format The main data frame \code{SLD_df} has 220653 rows and 139 variables:
+#' @format The main data frame \code{SLD_df} has 220653 rows and 150 variables:
 #' \describe{
 #'   \item{AC_LAND}{}
 #'   \item{AC_TOT}{}
@@ -107,6 +107,7 @@
 #'   \item{E_PCTLOWWA}{}
 #'   \item{GEOID10}{}
 #'   \item{HH}{}
+#'   \item{LSADC}{}
 #'   \item{PCT_AO0}{}
 #'   \item{PCT_AO1}{}
 #'   \item{PCT_AO2P}{}
@@ -142,7 +143,17 @@
 #'   \item{TRPOP}{}
 #'   \item{TRShape_Area}{}
 #'   \item{UACE}{}
+#'   \item{UA_NAME}{}
 #'   \item{Urban}{}
+#'   \item{UZAAC_LAND}{}
+#'   \item{UZAACTDEN}{}
+#'   \item{UZAAC_UNPR}{}
+#'   \item{UZAAREA}{}
+#'   \item{UZAEMPDEN}{}
+#'   \item{UZAHUDEN}{}
+#'   \item{UZAPOP}{}
+#'   \item{UZAPOPDEN}{}
+#'   \item{UZAShape_Area}{}
 #'   }
 #'
 #'

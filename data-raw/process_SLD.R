@@ -1,5 +1,6 @@
 library(tidyverse)
 library(foreign)
+library(readr)
 
 zip_url <- "https://edg.epa.gov/data/PUBLIC/OP/SLD/SLD_dbf.zip"
 data_dir <- tempdir()
@@ -16,7 +17,7 @@ sld_raw <- read.dbf(SLD_file, as.is=TRUE) %>% as_tibble()
 
 #data dictionary: https://www.epa.gov/sites/production/files/2014-03/documents/sld_userguide.pdf
 
-#code NA from -99999 (NA coding used by NHTS)
+#code NA from -99999 (NA coding used by SLD)
 SLD_df <- sld_raw %>% na_if(-99999)
 
 SLD_df <- SLD_df %>% rename(BGWORKERS=WORKERS)
